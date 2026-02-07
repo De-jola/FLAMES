@@ -1,5 +1,7 @@
 # FLAMES 💖
 
+**Vercel link** : https://flames-xi-livid.vercel.app/
+
 > “Love, Math, and a Little Delusion”
 
 A playful web app that brings back the classic schoolyard game of FLAMES. Enter your name and your crush’s name, and see which of the six legendary states of destiny you land on.
@@ -88,11 +90,6 @@ Think: school crush energy with modern web polish
 
 ---
 
-## Live Demo
-
-[View FLAMES on Vercel](YOUR_VERCEL_LINK_HERE)
-
----
 
 ## Links to the Case Study and Design Documents
 
