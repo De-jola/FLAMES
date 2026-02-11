@@ -1,11 +1,56 @@
-body {
-  font-family: "Comfortaa", cursive;
+:root {
+  /*Typography*/
+
+  --font-heading: "Caveat", cursive;
+  --font-body: "Comfortaa", sans-serif;
+  --font-weight-bold: 700;
+  --font-weight-normal: 400;
+  --text-hero: 3rem;
+  --text-section-headings: 2rem;
+  --text-card-headings: 1.5rem;
+  --text-base: 1rem;
+  --text-small: 0.875rem;
+  --text-xm: 0.75rem;
+
+  /*Colors*/
+  --color-blush-red: #e94b6a; /* Primary */
+  --color-cotton-candy-pink: #f7a8b8; /* Secondary*/
+  --color-wine-red: #5a0f2e; /* Text */
+  --color-soft-peach: #ffe3dc; /* Background  */
+  --color-creamy-white: #fff5ec; /*Accent*/
+
+  --action-primary: var(--color-blush-red);
+  --action-secondary: var(--color-cotton-candy-pink);
+  --text-main: var(--color-wine-red);
+  --bg-hero: var(--color-creamy-white);
+  --text-inverse: var(--color-soft-peach);
+  --text-heading: var(--color-blush-red);
+
+  /*Spacing, Shapes and Effects*/
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px; /* For "Destiny State" mini-cards */
+  --radius-full: 999px; /* For the "Calculate My Fate" CTA */
+
+  /* Effects */
+  --shadow-soft: 0 4px 12px rgba(90, 15, 46, 0.1);
+  --scale-sm: 0.98; /*active buttons*/
+  --scale-md: 1.05; /*hover buttons */
+  --scale-lg: 1.1;
+  --float: -10px;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Caveat", cursive;
+body {
+  font-family: var(--font-body);
+}
+
+.heading {
+  font-family: var(--font-heading);
+  color: var(--text-heading);
 }
