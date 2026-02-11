@@ -1,0 +1,37 @@
+/* DESIGN SYSTEM (TOKENS) */
+:root {
+  /* Colors */
+  --color-primary: #e94b6a;
+  --color-secondary: #f7a8b8;
+  --color-accent: #fff5ec;
+  --color-text: #5a0f2e;
+  --color-background: #ffe3dc;
+
+  /* Typography */
+  --font-heading: "Caveat", cursive;
+  --font-body: "Comfortaa", cursive;
+}
+
+/* GLOBAL RESETS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  color: var(--color-text);
+}
