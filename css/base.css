@@ -1,0 +1,105 @@
+/* Root Tokens */
+:root {
+  /* Colors */
+
+  /* Brand Palette */
+  --color-blush-red: #e94b6a; /* Primary */
+  --color-cotton-candy-pink: #f7a8b8; /* Secondary */
+  --color-creamy-white: #fff5ec; /* Accent */
+  --color-wine-red: #5a0f2e; /* Text */
+  --color-soft-peach: #ffe3dc; /* Background */
+
+  /* Semantic Tokens */
+  --action-primary: var(--color-blush-red);
+  --action-secondary: var(--color-cotton-candy-pink);
+  --text-main: var(--color-wine-red);
+  --text-heading: var(--color-blush-red);
+  --text-inverse: var(--color-soft-peach);
+  --bg-body: var(--color-soft-peach);
+  --bg-hero: var(--color-creamy-white);
+
+  /* Typography */
+  --font-heading: "Caveat", cursive;
+  --font-body: "Comfortaa", sans-serif;
+
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+
+  /* Type Scale */
+  --text-hero: 3rem;
+  --text-section-heading: 2rem;
+  --text-card-heading: 1.5rem;
+  --text-base: 1rem;
+  --text-small: 0.875rem;
+  --text-xs: 0.75rem;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px; /* For "Destiny State" mini-cards */
+  --radius-full: 999px; /* For the "Calculate My Fate" CTA */
+
+  /* Effects */
+  --shadow-soft: 0 4px 12px rgba(90, 15, 46, 0.1);
+
+  --scale-sm: 0.98; /* active buttons */
+  --scale-md: 1.05; /* hover buttons */
+  --scale-lg: 1.1;
+
+  --float-offset: -10px;
+}
+
+/* Global Resets */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-normal);
+  background-color: var(--bg-body);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+/* Global Element Styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  color: var(--text-heading);
+  font-weight: var(--font-weight-bold);
+}
+
+p {
+  font-size: var(--text-base);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
