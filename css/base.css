@@ -26,7 +26,7 @@
   --font-weight-bold: 700;
 
   /* Type Scale */
-  --text-hero: 3rem;
+  --text-hero: 3.5rem;
   --text-section-heading: 2rem;
   --text-card-heading: 1.5rem;
   --text-base: 1rem;
@@ -49,6 +49,8 @@
   --space-1-5: 20%; /*fifth*/
   --space-1-7: 15%; /*seventh*/
   --space-half: 50%;
+  --space-three-quarters: 70%;
+
   --space-full: 100%;
   /* Border Radius */
   --radius-sm: 8px;
@@ -107,6 +109,36 @@
   opacity: var(--opacity-md);
 }
 
-.margin-bottom {
+.margin {
+  margin-top: var(--space-8);
   margin-bottom: var(--space-8);
+}
+
+.text-sm {
+  font-size: var(--text-small);
+}
+.text-md {
+  font-size: var(--text-base);
+}
+.text-lg {
+  font-size: var(--text-card-heading);
+}
+.text-xl {
+  font-size: var(--text-section-heading);
+}
+.text-2xl {
+  font-size: var(--text-hero);
+}
+.block {
+  display: block;
+}
+
+.width-half {
+  width: var(--space-half);
+}
+.auto {
+  margin: auto;
+}
+.scale-sm {
+  scale: var(--scale-sm);
 }
