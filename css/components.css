@@ -1,6 +1,9 @@
 /* Navbar Styling */
 .nav-container {
   background-color: var(--bg-nav);
+  position: fixed;
+  width: var(--space-full);
+  border-bottom: 0.1px solid var(--action-secondary);
 }
 .nav-container a {
   text-decoration: none;
@@ -19,7 +22,7 @@
 
 .hero-section {
   text-align: center;
-  padding: var(--space-8) var(--space-4);
+  padding: var(--space-1-10) var(--space-4);
   background-color: var(--bg-hero);
 
   font-size: var(--text-card-heading);
@@ -31,7 +34,29 @@
 }
 
 /* About Section Styling */
+.about-section {
+  flex-wrap: wrap;
+  text-align: center;
+  background-color: var(--bg-nav);
+  padding: var(--space-12) var(--space-1-10);
+  gap: var(--space-2);
+}
+.about-section article {
+  background-color: var(--bg-body);
+  border: 2px solid var(--action-secondary);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  height: 350px;
+  cursor: pointer;
+  transition: var(--transition-ease-in-out);
+}
 
+.about-section article.description-box {
+  background-color: white;
+  padding: var(--space-8) var(--space-24);
+  height: (--space-half);
+  cursor: default;
+}
 /* Destiny States Section Styling */
 
 /* Calculator Section Styling */
