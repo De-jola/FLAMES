@@ -1,4 +1,19 @@
 /* Navbar Styling */
+.nav-container {
+  background-color: var(--bg-nav);
+}
+.nav-container a {
+  text-decoration: none;
+  color: var(--text-main);
+  font-size: var(--text-base);
+  transition: var(--transition-ease-in);
+}
+.nav-container a:hover {
+  color: var(--text-heading);
+}
+.nav-flex {
+  margin-left: auto;
+}
 
 /* Hero Section Styling */
 
@@ -9,3 +24,9 @@
 /* Calculator Section Styling */
 
 /* Footer Styling */
+
+/*Body Styling*/
+.body {
+  font-family: var(--font-body);
+  color: var(--text-main);
+}

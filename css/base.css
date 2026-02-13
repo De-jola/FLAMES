@@ -15,9 +15,9 @@
   --text-main: var(--color-wine-red);
   --text-heading: var(--color-blush-red);
   --text-inverse: var(--color-soft-peach);
+  --text-color-btn: var(--color-creamy-white);
   --bg-body: var(--color-soft-peach);
-  --bg-hero: var(--color-creamy-white);
-
+  --bg-nav: var(--color-creamy-white);
   /* Typography */
   --font-heading: "Caveat", cursive;
   --font-body: "Comfortaa", sans-serif;
@@ -32,15 +32,24 @@
   --text-base: 1rem;
   --text-small: 0.875rem;
   --text-xs: 0.75rem;
-
+  --text-btn: 1.125rem;
   /* Spacing */
   --space-1: 0.25rem;
   --space-2: 0.5rem;
-  --space-4: 1rem;
+  --space-3: 0.75rem;
+  --space-4: 0.875rem;
+  --space-5: 1rem;
   --space-6: 1.5rem;
   --space-8: 2rem;
   --space-12: 3rem;
-
+  --space-16: 4rem;
+  --space-24: 6rem;
+  --space-1-3: 30%; /*one-third*/
+  --space-1-4: 25%; /*fourth*/
+  --space-1-5: 20%; /*fifth*/
+  --space-1-7: 15%; /*seventh*/
+  --space-half: 50%;
+  --space-full: 100%;
   /* Border Radius */
   --radius-sm: 8px;
   --radius-md: 16px;
@@ -53,8 +62,11 @@
   --scale-sm: 0.98; /* active buttons */
   --scale-md: 1.05; /* hover buttons */
   --scale-lg: 1.1;
-
+  --opacity-sm: 0.8; /* active buttons */
+  --opacity-md: 0.9; /* hover buttons */
   --float-offset: -10px;
+  --transition-ease-in-out: all 0.3s ease-in-out;
+  --transition-ease-in: all 0.1s ease;
 }
 
 /* Global Resets */
@@ -70,4 +82,31 @@
   font-family: var(--font-heading);
   color: var(--text-heading);
   font-weight: var(--font-weight-bold);
+  font-size: var(--text-hero);
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+  gap: var(--space-12) !important;
+  align-items: center;
+  padding: var(--space-4) var(--space-8);
+}
+.primary-btn {
+  padding: var(--space-3) var(--space-6);
+  background-color: var(--action-primary);
+  color: var(--text-color-btn);
+  border: none;
+  font-size: var(--text-btn);
+  border-radius: var(--radius-full);
+  font-family: var(--font-body);
+  transition: var(--transition-ease-in-out);
+  cursor: pointer;
+}
+.primary-btn:hover {
+  scale: var(--scale-md);
+  opacity: var(--opacity-md);
+}
+
+.margin-bottom {
+  margin-bottom: var(--space-8);
 }
