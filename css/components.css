@@ -62,6 +62,42 @@
 /* Calculator Section Styling */
 
 /* Footer Styling */
+.footer {
+  background-color: var(--text-main);
+  color: var(--text-inverse);
+  padding: var(--space-10) var(--space-5);
+  text-align: center;
+}
+
+.footer-tagline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-body);
+  font-size: var(--text-btn);
+  margin-bottom: var(--space-5);
+}
+
+.footer-icon {
+  fill: var(--action-primary);
+  flex-shrink: 0;
+  height: 20px;
+  width: 20px;
+}
+
+.footer-copyright {
+  font-size: var(--text-small);
+  opacity: var(--opacity-md);
+}
+
+@media (max-width: 480px) {
+  .footer-tagline {
+    flex-direction: column;
+    gap: var(--space-4);
+    margin-bottom: var(--space-8);
+  }
+}
 
 /*Body Styling*/
 .body {
