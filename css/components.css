@@ -4,6 +4,7 @@
   position: fixed;
   width: var(--space-full);
   border-bottom: 0.1px solid var(--action-secondary);
+  z-index: 99999;
 }
 .nav-container a {
   text-decoration: none;
@@ -48,16 +49,136 @@
   padding: var(--space-8);
   height: 350px;
   cursor: pointer;
+  line-height: 1.4;
   transition: var(--transition-ease-in-out);
 }
 
 .about-section article.description-box {
-  background-color: white;
-  padding: var(--space-8) var(--space-24);
-  height: (--space-half);
+  background-color: #fff;
+  height: auto;
   cursor: default;
 }
+
+@media (min-width: 768px) {
+  .about-section article.description-box {
+    height: (--space-half);
+    padding: var(--space-8) var(--space-24);
+  }
+}
+
 /* Destiny States Section Styling */
+.destiny-states-section {
+  background-color: var(--bg-nav);
+  padding: var(--space-24) var(--space-1-10);
+  text-align: center;
+}
+
+.destiny-states-section__heading {
+  margin-bottom: var(--space-6);
+}
+
+.destiny-states-section__paragraph {
+  font-size: var(--text-btn);
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: var(--opacity-md);
+}
+
+.destiny-states-section__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+  margin-top: var(--space-16);
+}
+
+.destiny-states-section__state-card {
+  background: #fff;
+  border: 2px solid var(--action-secondary);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8) var(--space-6);
+  text-align: center;
+  transition: var(--transition-ease-in-out);
+}
+
+.destiny-states-section__state-card:hover {
+  border-color: var(--action-primary);
+  box-shadow: var(--shadow-soft);
+  transform: translateY(-5px);
+}
+
+.destiny-states-section__state-badge {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background: linear-gradient(
+    135deg,
+    var(--action-primary),
+    var(--action-secondary)
+  );
+  color: #fff;
+  font-family: var(--font-heading);
+  font-size: var(--text-card-heading);
+  font-weight: var(--font-weight-bold);
+  transition: var(--transition-ease-in-out);
+}
+
+.destiny-states-section__state-emoji {
+  display: block;
+  font-size: var(--text-section-heading);
+  margin-top: var(--space-2);
+  transition: var(--transition-ease-in-out);
+}
+
+.destiny-states-section__state-card:hover .destiny-states-section__state-badge,
+.destiny-states-section__state-card:hover .destiny-states-section__state-emoji {
+  scale: var(--scale-lg);
+}
+
+.destiny-states-section__state-title {
+  font-family: var(--font-heading);
+  font-size: var(--text-card-heading);
+  margin-top: var(--space-4);
+  font-weight: var(--font-weight-bold);
+}
+
+.destiny-states-section__state-subtitle {
+  font-size: var(--text-card-heading);
+  margin-top: var(--space-2);
+  color: var(--action-primary);
+  font-weight: var(--font-weight-normal);
+  font-size: var(--text-small);
+}
+
+.destiny-states-section__state-description {
+  margin-top: var(--space-4);
+  font-size: var(--text-small);
+  line-height: 1.6;
+}
+
+.destiny-states-section__footer {
+  display: inline-block;
+  line-height: 1.6;
+  margin-top: var(--space-12);
+  max-width: 700px;
+  opacity: var(--opacity-md);
+}
+
+@media (min-width: 600px) {
+  .destiny-states-section__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .destiny-states-section__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 /* Calculator Section Styling */
 
