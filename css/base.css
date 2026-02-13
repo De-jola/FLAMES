@@ -18,6 +18,7 @@
   --text-color-btn: var(--color-creamy-white);
   --bg-body: var(--color-soft-peach);
   --bg-nav: var(--color-creamy-white);
+
   /* Typography */
   --font-heading: "Caveat", cursive;
   --font-body: "Comfortaa", sans-serif;
@@ -27,8 +28,8 @@
 
   /* Type Scale */
   --text-hero: 3.5rem;
-  --text-section-heading: 2rem;
-  --text-card-heading: 1.5rem;
+  --text-section-heading: 2.5rem;
+  --text-card-heading: 1.75rem;
   --text-base: 1rem;
   --text-small: 0.875rem;
   --text-xs: 0.75rem;
@@ -48,6 +49,7 @@
   --space-1-4: 25%; /*fourth*/
   --space-1-5: 20%; /*fifth*/
   --space-1-7: 15%; /*seventh*/
+  --space-1-10: 10%; /*tenth*/
   --space-half: 50%;
   --space-three-quarters: 70%;
 
@@ -80,11 +82,19 @@
   box-sizing: border-box;
 }
 
+.blush-red {
+  color: var(--action-primary);
+}
+
 .heading {
   font-family: var(--font-heading);
   color: var(--text-heading);
   font-weight: var(--font-weight-bold);
   font-size: var(--text-hero);
+}
+.heading-inverse {
+  font-family: var(--font-heading);
+  color: var(--text-main);
 }
 .flex {
   display: flex;
@@ -141,4 +151,18 @@
 }
 .scale-sm {
   scale: var(--scale-sm);
+}
+.flex-space-block {
+  flex: 0 0 100%;
+}
+
+.flex-space-flex {
+  flex: 1 1 200px;
+}
+.shadow {
+  box-shadow: var(--shadow-soft);
+}
+
+.text-align-left {
+  text-align: left;
 }
