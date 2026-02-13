@@ -19,10 +19,29 @@
           <img src="./images/flamesLogo.png" alt="FLAMES Logo" />
         </a>
 
-        <a href="#" class="nav-flex">Home</a>
-        <a href="#">About</a>
-        <a href="#">The Destiny States</a>
+        <a href="#" class="nav-flex nav-link">Home</a>
+        <a href="#" class="nav-link">About</a>
+        <a href="#" class="nav-link">The Destiny States</a>
         <button class="primary-btn">Calculate My Fate</button>
+
+        <!-- Hamburger (mobile only) -->
+        <button class="nav-hamburger" aria-label="Open Menu">
+          <svg
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4 6H20M4 12H20M4 18H20"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
       </nav>
 
       <div class="hero-section">
@@ -43,6 +62,7 @@
         </small>
       </div>
     </header>
+
     <main>
       <!-- About Section -->
       <section class="about-section flex" id="about">
@@ -207,57 +227,87 @@
       </section>
 
       <!-- Calculator Section -->
-      <section id="calculator" aria-labelledby="calculator-heading">
-        <h2 id="calculator-heading">The Ritual</h2>
-        <p>
+      <section id="calculator" class="calculator-section">
+        <h2 class="calculator-section__heading heading text-xl">The Ritual</h2>
+        <p class="calculator-section__paragraph">
           Type both names. Take a deep breath. Let the algorithm decide your
           fate.
         </p>
 
-        <form action="#" method="post">
-          <fieldset>
+        <form class="calculator-section__form shadow" action="#" method="post">
+          <fieldset class="calculator-section__form-fieldset">
             <!-- Name 1 -->
             <div>
-              <label for="name1"> Your Name </label>
+              <label for="name1" class="calculator-section__form-label"
+                ><img
+                  src="./images/heartIcon.png"
+                  alt="heart"
+                  class="calculator-section__form-label-icon"
+                />
+                Your Name
+              </label>
               <input
                 type="text"
                 id="name1"
                 name="name1"
+                class="calculator-section__form-input"
                 placeholder="Enter your name..."
                 required
               />
             </div>
 
-            <!-- Divider (conceptual, not visual yet) -->
-            <p aria-hidden="true">❤️</p>
+            <!-- Divider -->
+            <p aria-hidden="true" class="calculator-section__form-divider">
+              <span class="calculator-section__form-divider-line"></span>
+              <svg
+                class="calculator-section__form-divider-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 
+                 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 
+                 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 
+                 6.86-8.55 11.54L12 21.35z"
+                />
+              </svg>
+              <span class="calculator-section__form-divider-line"></span>
+            </p>
 
             <!-- Name 2 -->
             <div>
-              <label for="name2"> Your Crush's Name </label>
+              <label for="name2" class="calculator-section__form-label"
+                ><img
+                  src="./images/starIcon.png"
+                  alt="star"
+                  class="calculator-section__form-label-icon"
+                />
+                Your Crush's Name
+              </label>
               <input
                 type="text"
                 id="name2"
                 name="name2"
+                class="calculator-section__form-input"
                 placeholder="Enter their name..."
                 required
               />
             </div>
 
-            <!-- Submit -->
-            <div>
-              <button type="submit">Calculate My Fate 🔥</button>
-            </div>
+            <!-- Submit Button -->
+            <button type="submit" class="calculator-section__form-button">
+              Calculate My Fate
+            </button>
           </fieldset>
-        </form>
 
-        <p>
-          <em>
+          <small class="calculator-section__form-footer">
             Pro tip: Spelling matters. “John” and “Jhon” are completely
             different destinies.
-          </em>
-        </p>
+          </small>
+        </form>
       </section>
     </main>
+
     <footer class="footer">
       <p class="footer-tagline">
         <svg
