@@ -12,232 +12,331 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="body">
     <header>
-      <nav>
+      <nav class="flex nav-container">
         <a href="#">
           <img src="./images/flamesLogo.png" alt="FLAMES Logo" />
         </a>
 
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">The Destiny States</a>
-        <button>Calculate My Fate</button>
+        <a href="#" class="nav-flex nav-link">Home</a>
+        <a href="#" class="nav-link">About</a>
+        <a href="#" class="nav-link">The Destiny States</a>
+        <button class="primary-btn">Calculate My Fate</button>
+
+        <!-- Hamburger (mobile only) -->
+        <button class="nav-hamburger" aria-label="Open Menu">
+          <svg
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4 6H20M4 12H20M4 18H20"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
       </nav>
 
-      <h1>Love, Math, and a Little Delusion</h1>
+      <div class="hero-section">
+        <h1 class="heading margin">Love, Math, and a Little Delusion</h1>
 
-      <p>It's not that deep... but let's check anyway.</p>
-      <p>
-        Remember when you'd scribble your crush's name next to yours in class?
-        We brought that energy to the internet. ✨
-      </p>
+        <p class="margin">It's not that deep... but let's check anyway.</p>
+        <p class="text-md width-half margin auto">
+          Remember when you'd scribble your crush's name next to yours in class?
+          We brought that energy to the internet. ✨
+        </p>
 
-      <button class="nav-cta">Reveal Our FLAMES🔥</button>
-      <small
-        >Disclaimer: Results are 100% scientifically inaccurate but emotionally
-        devastating
-      </small>
+        <button class="primary-btn margin">
+          Reveal Our FLAMES <span>🔥</span>
+        </button>
+        <small class="text-sm block"
+          >Disclaimer: Results are 100% scientifically inaccurate but
+          emotionally devastating
+        </small>
+      </div>
     </header>
+
     <main>
       <!-- About Section -->
-      <section class="about" id="about">
-        <h2>The Story Behind the Chaos</h2>
-        <article>
+      <section class="about-section flex" id="about">
+        <h2 class="heading text-xl flex-space-block">
+          The Story Behind the Chaos
+        </h2>
+        <article class="flex-space-flex">
           <img src="./images/heartIcon.png" alt="heart" />
-          <h3>We all have that crush</h3>
+          <h3 class="margin text-lg heading-inverse">We all have that crush</h3>
 
-          <p>
+          <p class="margin">
             Or three. Or a celebrity that doesn't know you exist. Or your
             barista who spelled your name wrong but smiled anyway.
           </p>
         </article>
-        <article>
+        <article class="flex-space-flex">
           <img src="./images/brainIcon.png" alt="brain" />
-          <h3>The Overthinking</h3>
+          <h3 class="margin text-lg heading-inverse">The Overthinking</h3>
 
-          <p>
+          <p class="margin">
             "Did they look at me for 2.3 seconds or 2.4? Better analyze this for
             the next 6 hours."
           </p>
         </article>
-        <article>
+        <article class="flex-space-flex">
           <img src="./images/starIcon.png" alt="star" />
-          <h3>The Solution</h3>
+          <h3 class="margin text-lg heading-inverse">The Solution</h3>
 
-          <p>
+          <p class="margin">
             FLAMES is here to turn that overthinking into entertainment. Because
             why stress when you can let math decide?
           </p>
         </article>
 
         <!--What is Flames-->
-        <article>
-          <h2>What Even is FLAMES?</h2>
+        <div class="flex-space">
+          <article class="description-box shadow">
+            <h2 class="heading-inverse text-lg">What Even is FLAMES?</h2>
 
-          <p>
-            Born in schoolyards across the world, FLAMES is the original
-            relationship calculator. Before dating apps, before "sliding into
-            DMs," there was just you, your crush's name, and a piece of paper.
-          </p>
-          <p>
-            The rules are simple: write both names, cancel out the common
-            letters, count what's left, and let the alphabet gods decide your
-            fate. Are you Friends? Lovers? Married? Or (heaven forbid) Enemies?
-          </p>
-          <quote>"It's giving delulu, and we're here for it."</quote>
-          <span>— Everyone who's ever used FLAMES</span>
-        </article>
+            <p class="text-align-left margin">
+              Born in schoolyards across the world, FLAMES is the original
+              relationship calculator. Before dating apps, before "sliding into
+              DMs," there was just you, your crush's name, and a piece of paper.
+            </p>
+            <p class="text-align-left margin">
+              The rules are simple: write both names, cancel out the common
+              letters, count what's left, and let the alphabet gods decide your
+              fate. Are you Friends? Lovers? Married? Or (heaven forbid)
+              Enemies?
+            </p>
+            <quote class="blush-red"
+              >"It's giving delulu, and we're here for it."</quote
+            >
+            <span class="blush-red">— Everyone who's ever used FLAMES</span>
+          </article>
+        </div>
       </section>
 
       <!-- Destiny States Section -->
-      <section id="destiny-states">
-        <h2>The Six States of Destiny</h2>
-        <p>
+      <section id="destiny-states" class="destiny-states-section">
+        <h2 class="destiny-states-section__heading heading text-xl">
+          The Six States of Destiny
+        </h2>
+        <p class="destiny-states-section__paragraph">
           Your romantic fate boils down to one of these. No pressure, but this
           definitely determines your entire future.
         </p>
 
-        <div class="states-grid">
-          <article>
-            <span>F</span>
-            <span>🤝</span>
-            <h3>Friends</h3>
-            <h4>Bestie Energy</h4>
+        <div class="destiny-states-section__grid">
+          <article class="destiny-states-section__state-card">
+            <span class="destiny-states-section__state-badge">F</span>
+            <span class="destiny-states-section__state-emoji">🤝</span>
+            <h3 class="destiny-states-section__state-title">Friends</h3>
+            <h4 class="destiny-states-section__state-subtitle">
+              Bestie Energy
+            </h4>
 
-            <p>
+            <p class="destiny-states-section__state-description">
               Maybe you're better off as friends. Or maybe you're just in
               denial. Either way, the friend zone is real and you might be
               living in it.
             </p>
           </article>
 
-          <article>
-            <span>L</span>
-            <span>💕</span>
-            <h3>Lovers</h3>
-            <h4>Main Character Moment</h4>
+          <article class="destiny-states-section__state-card">
+            <span class="destiny-states-section__state-badge">L</span>
+            <span class="destiny-states-section__state-emoji">💕</span>
+            <h3 class="destiny-states-section__state-title">Lovers</h3>
+            <h4 class="destiny-states-section__state-subtitle">
+              Main Character Moment
+            </h4>
 
-            <p>
+            <p class="destiny-states-section__state-description">
               This is it. The rom-com writes itself. Cue the rain scene, the
               airport chase, the "I've loved you all along" confession. You're
               living the dream.
             </p>
           </article>
 
-          <article>
-            <span>A</span>
-            <span>👀</span>
-            <h3>Admirers</h3>
-            <h4>Watching From Afar</h4>
+          <article class="destiny-states-section__state-card">
+            <span class="destiny-states-section__state-badge">A</span>
+            <span class="destiny-states-section__state-emoji">👀</span>
+            <h3 class="destiny-states-section__state-title">Admirers</h3>
+            <h4 class="destiny-states-section__state-subtitle">
+              Watching From Afar
+            </h4>
 
-            <p>
+            <p class="destiny-states-section__state-description">
               Secret glances. Subtle likes on old Instagram posts. You're
               low-key obsessed but keeping it cute. Secretly Pinterest-ing what
               your couple aesthetic would be.
             </p>
           </article>
 
-          <article>
-            <span>M</span>
-            <span>💍</span>
-            <h3>Married</h3>
-            <h4>Wedding Pinterest Activated</h4>
+          <article class="destiny-states-section__state-card">
+            <span class="destiny-states-section__state-badge">M</span>
+            <span class="destiny-states-section__state-emoji">💍</span>
+            <h3 class="destiny-states-section__state-title">Married</h3>
+            <h4 class="destiny-states-section__state-subtitle">
+              Wedding Pinterest Activated
+            </h4>
 
-            <p>
+            <p class="destiny-states-section__state-description">
               You're already planning the venue, the dress, the color scheme.
               Save the date vibes. Your future in-laws don't know it yet, but
               you're already part of the family.
             </p>
           </article>
 
-          <article>
-            <span>E</span>
-            <span>😤</span>
-            <h3>Enemies</h3>
-            <h4>Block and Move On</h4>
+          <article class="destiny-states-section__state-card">
+            <span class="destiny-states-section__state-badge">E</span>
+            <span class="destiny-states-section__state-emoji">😤</span>
+            <h3 class="destiny-states-section__state-title">Enemies</h3>
+            <h4 class="destiny-states-section__state-subtitle">
+              Block and Move On
+            </h4>
 
-            <p>
+            <p class="destiny-states-section__state-description">
               Villain origin story unlocked. This is the enemies-to-lovers arc
               nobody asked for. Red flag detected. Unfollow, unmatch,
               unsubscribe from this disaster.
             </p>
           </article>
 
-          <article>
-            <span>S</span>
-            <span>🙈</span>
-            <h3>Sexual Partners</h3>
-            <h4>Say Less</h4>
+          <article class="destiny-states-section__state-card">
+            <span class="destiny-states-section__state-badge">S</span>
+            <span class="destiny-states-section__state-emoji">🙈</span>
+            <h3 class="destiny-states-section__state-title">Sexual Partners</h3>
+            <h4 class="destiny-states-section__state-subtitle">Say Less</h4>
 
-            <p>
+            <p class="destiny-states-section__state-description">
               No further questions, your honor. We're keeping this PG-13 but the
               energy is clear. Netflix and... you know. Moving on.
             </p>
           </article>
         </div>
 
-        <small>
+        <small class="destiny-states-section__footer text-md">
           Remember: FLAMES is as accurate as your daily horoscope and as
           reliable as your ex's promises. But it's way more fun. 🔮
         </small>
       </section>
 
       <!-- Calculator Section -->
-      <section id="calculator" aria-labelledby="calculator-heading">
-        <h2 id="calculator-heading">The Ritual</h2>
-        <p>
+      <section id="calculator" class="calculator-section">
+        <h2 class="calculator-section__heading heading text-xl">The Ritual</h2>
+        <p class="calculator-section__paragraph">
           Type both names. Take a deep breath. Let the algorithm decide your
           fate.
         </p>
 
-        <form action="#" method="post">
-          <fieldset>
+        <form class="calculator-section__form shadow" action="#" method="post">
+          <fieldset class="calculator-section__form-fieldset">
             <!-- Name 1 -->
             <div>
-              <label for="name1"> Your Name </label>
+              <label for="name1" class="calculator-section__form-label"
+                ><img
+                  src="./images/heartIcon.png"
+                  alt="heart"
+                  class="calculator-section__form-label-icon"
+                />
+                Your Name
+              </label>
               <input
                 type="text"
                 id="name1"
                 name="name1"
+                class="calculator-section__form-input"
                 placeholder="Enter your name..."
                 required
               />
             </div>
 
-            <!-- Divider (conceptual, not visual yet) -->
-            <p aria-hidden="true">❤️</p>
+            <!-- Divider -->
+            <p aria-hidden="true" class="calculator-section__form-divider">
+              <span class="calculator-section__form-divider-line"></span>
+              <svg
+                class="calculator-section__form-divider-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 
+                 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 
+                 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 
+                 6.86-8.55 11.54L12 21.35z"
+                />
+              </svg>
+              <span class="calculator-section__form-divider-line"></span>
+            </p>
 
             <!-- Name 2 -->
             <div>
-              <label for="name2"> Your Crush's Name </label>
+              <label for="name2" class="calculator-section__form-label"
+                ><img
+                  src="./images/starIcon.png"
+                  alt="star"
+                  class="calculator-section__form-label-icon"
+                />
+                Your Crush's Name
+              </label>
               <input
                 type="text"
                 id="name2"
                 name="name2"
+                class="calculator-section__form-input"
                 placeholder="Enter their name..."
                 required
               />
             </div>
 
-            <!-- Submit -->
-            <div>
-              <button type="submit">Calculate My Fate 🔥</button>
-            </div>
+            <!-- Submit Button -->
+            <button type="submit" class="calculator-section__form-button">
+              Calculate My Fate
+            </button>
           </fieldset>
-        </form>
 
-        <p>
-          <em>
+          <small class="calculator-section__form-footer">
             Pro tip: Spelling matters. “John” and “Jhon” are completely
             different destinies.
-          </em>
-        </p>
+          </small>
+        </form>
       </section>
     </main>
-    <footer>
-      <p>Made with delusion and a little bit of math</p>
-      <small
+
+    <footer class="footer">
+      <p class="footer-tagline">
+        <svg
+          class="footer-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 
+                 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 
+                 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 
+                 6.86-8.55 11.54L12 21.35z"
+          />
+        </svg>
+        Made with delusion and a little bit of math
+        <svg
+          class="footer-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 
+                 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 
+                 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 
+                 6.86-8.55 11.54L12 21.35z"
+          />
+        </svg>
+      </p>
+      <small class="footer-copyright"
         >© 2026 FLAMES • Remember: It's not that deep... but it's fun to pretend
         it is</small
       >
