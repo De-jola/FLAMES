@@ -2,6 +2,11 @@
 
 **Vercel link** : https://flames-xi-livid.vercel.app/
 
+## Individual Case Studies
+
+- [Adejola Esther Anuoluwapo](https://docs.google.com/document/d/1ehohPSHVHFY-4rWV2OwneCySBE--2R-zxS4jM1un8Dk/edit?usp=sharing)
+- [Victor Okoukoni](https://medium.com/@victorokoukoni/flames-designing-emotion-into-a-frontend-experience-d4ce68dfa274)
+
 > “Love, Math, and a Little Delusion”
 
 A playful web app that brings back the classic schoolyard game of FLAMES. Enter your name and your crush’s name, and see which of the six legendary states of destiny you land on.
