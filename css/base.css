@@ -83,6 +83,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scrollbar-color: var(--action-secondary) var(--text-main);
+}
+
 .blush-red {
   color: var(--action-primary);
 }
@@ -108,6 +113,8 @@
   padding: var(--space-3) var(--space-6);
   background-color: var(--action-primary);
   color: var(--text-color-btn);
+  display: inline-block;
+  text-decoration: none;
   border: none;
   font-size: var(--text-btn);
   border-radius: var(--radius-full);

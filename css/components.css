@@ -6,13 +6,13 @@
   border-bottom: 0.1px solid var(--action-secondary);
   z-index: 99999;
 }
-.nav-container a {
+.nav-container .nav-link {
   text-decoration: none;
   color: var(--text-main);
   font-size: var(--text-base);
   transition: var(--transition-ease-in);
 }
-.nav-container a:hover {
+.nav-container .nav-link:hover {
   color: var(--text-heading);
 }
 .nav-flex {
