@@ -4,7 +4,7 @@
   position: fixed;
   width: var(--space-full);
   border-bottom: 0.1px solid var(--action-secondary);
-  z-index: 99999;
+  z-index: var(--z-nav);
 }
 .nav-container .nav-link {
   text-decoration: none;

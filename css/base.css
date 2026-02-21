@@ -55,6 +55,13 @@
   --space-three-quarters: 70%;
   --space-full: 100%;
 
+  /* Z-index scale */
+  --z-base: 1;
+  --z-nav: 1000;
+  --z-dropdown: 1100;
+  --z-modal: 2000;
+  --z-overlay: 3000;
+
   /* Border Radius */
   --radius-sm: 8px;
   --radius-md: 16px;
