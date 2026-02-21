@@ -4,7 +4,7 @@
 
 ## Individual Case Studies
 
-- [Adejola Esther Anuoluwapo](https://docs.google.com/document/d/1ehohPSHVHFY-4rWV2OwneCySBE--2R-zxS4jM1un8Dk/edit?usp=sharing)
+- [Adejola Esther Anuoluwapo](https://medium.com/@adejolanu/reimagining-flames-a-case-study-in-digital-nostalgia-c469a0a80900)
 - [Victor Okoukoni](https://medium.com/@victorokoukoni/flames-designing-emotion-into-a-frontend-experience-d4ce68dfa274)
 
 > “Love, Math, and a Little Delusion”
