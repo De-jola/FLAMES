@@ -26,6 +26,7 @@
   --font-weight-bold: 700;
 
   /* Type Scale */
+  --text-lg: 5rem;
   --text-hero: 3.5rem;
   --text-section-heading: 2.5rem;
   --text-card-heading: 1.75rem;
@@ -59,8 +60,8 @@
   --z-base: 1;
   --z-nav: 1000;
   --z-dropdown: 1100;
-  --z-modal: 2000;
-  --z-overlay: 3000;
+  --z-overlay: 2000;
+  --z-modal: 3000;
 
   /* Border Radius */
   --radius-sm: 8px;
@@ -90,11 +91,88 @@
   box-sizing: border-box;
 }
 
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  80% {
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes heartBeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.65;
+  }
+}
+
+/* Smooth Scrolling */
 html {
   scroll-behavior: smooth;
   scrollbar-color: var(--action-secondary) var(--text-main);
 }
 
+/* Utility Classes */
 .blush-red {
   color: var(--action-primary);
 }
