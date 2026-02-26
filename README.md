@@ -52,9 +52,11 @@ Almost 8 in 10 people have experienced a crush — whether a celebrity, classmat
 ## JavaScript Implementation & Logic Flow
 
 **Overview**
+
 FLAMES uses Vanilla JavaScript to bring the classic schoolyard game to life — no backend, no database, no frameworks. All data lives in-memory using JavaScript arrays and objects, and the UI updates entirely through DOM manipulation. The goal was a fully interactive, resilient experience built on nothing but core web technologies.
 
 **Core Data Structure**
+
 The six possible FLAMES outcomes are stored as a constant array of objects. This acts as mock data, replacing any need for a database:
 
 ```
@@ -104,6 +106,7 @@ js/
 ```
 
 **FLAMES Algorithm**
+
 The core calculation lives in `calculateFLAMES(name1, name2)` — a pure function that takes two names and returns one destiny state.
 
 How it works:
