@@ -300,6 +300,43 @@ form.addEventListener("submit", (e) => {
   input.addEventListener("input", () => clearInputError(input)),
 );
 
+// Mobile hamburger nav
+function initMobileNav() {
+  const hamburger = document.querySelector(".nav-hamburger");
+  if (!hamburger) return;
+
+  // Build mobile drawer
+  const drawer = document.createElement("nav");
+  drawer.className = "nav-mobile-drawer";
+  drawer.setAttribute("aria-label", "Mobile navigation");
+  drawer.innerHTML = `
+    <button class="nav-mobile-drawer__close" aria-label="Close menu">✕</button>
+    <a href="/" class="nav-mobile-drawer__link">Home</a>
+    <a href="#about" class="nav-mobile-drawer__link">About</a>
+    <a href="#destiny-states" class="nav-mobile-drawer__link">The Destiny States</a>
+    <a href="#calculator" class="nav-mobile-drawer__link primary-btn">Calculate My Fate</a>
+  `;
+  document.body.appendChild(drawer);
+
+  const closeDrawer = () => {
+    drawer.classList.remove("nav-mobile-drawer--open");
+    document.body.style.overflow = "";
+  };
+
+  hamburger.addEventListener("click", () => {
+    drawer.classList.add("nav-mobile-drawer--open");
+    document.body.style.overflow = "hidden";
+    drawer.querySelector(".nav-mobile-drawer__close").focus();
+  });
+
+  drawer
+    .querySelector(".nav-mobile-drawer__close")
+    .addEventListener("click", closeDrawer);
+  drawer
+    .querySelectorAll(".nav-mobile-drawer__link")
+    .forEach((link) => link.addEventListener("click", closeDrawer));
+}
+
 // Utility
 function escapeHtml(str) {
   return str.replace(
@@ -313,3 +350,4 @@ function escapeHtml(str) {
 
 // Init
 buildModal();
+initMobileNav();
