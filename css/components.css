@@ -95,8 +95,18 @@
     display: block;
   }
 }
-
-/* Hero Section Styling */
+@media (max-width: 834px) {
+  .nav-container .nav-link {
+    text-decoration: none;
+    color: var(--text-main);
+    font-size: var(--text-small);
+    transition: var(--transition-ease-in);
+  }
+  .primary-btn {
+    padding: var(--space-3) var(--space-6);
+    font-size: var(--text-small);
+  }
+} /* Hero Section Styling */
 .hero-section {
   text-align: center;
   padding: var(--space-1-10) var(--space-4);
