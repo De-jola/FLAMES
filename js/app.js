@@ -187,21 +187,15 @@ function handleTryAgain() {
 }
 
 function handleShare() {
-  const link = "https://flames-xi-livid.vercel.app";
   const text = `Check out my FLAMES result! ${modal.dataset.name1} + ${modal.dataset.name2} = ${modal.dataset.state} ${modal.dataset.emoji}\n\nCalculate your FLAMES at: ${window.location.href}`;
 
-  // WhatsApp
-
-  const url = `https://wa.me/?text=${encodeURIComponent(text + " " + link)}`;
-  window.open(url, "_blank");
-
-  // if (navigator.share) {
-  //   navigator
-  //     .share({ title: "My FLAMES Result", text })
-  //     .catch(() => copyToClipboard(text));
-  // } else {
-  //   copyToClipboard(text);
-  // }
+  if (navigator.share) {
+    navigator
+      .share({ title: "My FLAMES Result", text })
+      .catch(() => copyToClipboard(text));
+  } else {
+    copyToClipboard(text);
+  }
 }
 
 function copyToClipboard(text) {
